@@ -29,13 +29,26 @@ Onsnap is a simple Electron-based application designed to load Snapchat's web in
    ```
 
 ## Usage
+To run a command in the terminal, then send it to the background, disown it, and close the terminal, follow these steps:
 
 1. Start the application:
    ```bash
    npm start
    ```
 
-2. The application will open a frameless window displaying Snapchat's web interface.
+2. Pause the command with `Ctrl+Z`.
+
+3. Send the command to the background:
+   ```bash
+   bg
+   ```
+
+4. Disown the process so it won't be terminated when the terminal is closed:
+   ```bash
+   disown
+   ```
+
+5. Close the terminal.
 
 ## Notes
 
