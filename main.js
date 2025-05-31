@@ -2,6 +2,17 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const fs = require("fs");
 
+process.on('uncaughtException', (err) => {
+    if (err.code === 'EIO' && err.syscall === 'write') {
+        // ignore EIO write errors
+        // neither process.stdout.isTTY nor process.stdout.writable helped
+        // so just ignore them
+        return;
+    }
+
+    throw err;
+});
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
