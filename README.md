@@ -49,9 +49,3 @@ To run a command in the terminal, then send it to the background, disown it, and
    ```
 
 5. Close the terminal.
-
-## Notes
-
-- The application uses Electron and injects custom CSS to hide scrollbars.
-- The `main.js` file ensures the window never loses focus by refocusing it when blurred.
-- If you prefer using ES modules, you can use `main.mjs` instead of `main.js`.
