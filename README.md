@@ -22,7 +22,7 @@ Onsnap is a simple Electron-based application designed to load Snapchat's web in
 1. Clone the repository:
 
 ```bash
-git clone [https://github.com/fyiel/Onsnap.git](https://github.com/fyiel/Onsnap.git)
+git clone https://github.com/fyiel/Onsnap.git
 cd Onsnap
 ```
 
